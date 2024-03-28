@@ -1,0 +1,42 @@
+ 
+ ---how use code ---
+ 
+  gsap.to("#box" , {
+      
+     x:700 ,
+   duration : 2 ,
+   delay : 1 ,
+   backgroundColor: "black" ,
+   rotate: 360 ,
+   yoyo: true,
+   repeat:3,
+
+  }) 
+
+  gsap.to("h2" , {
+      x:400,
+      duration:4,
+      delay:2,
+      stagger:1,
+      repeat:1,
+      yoyo:true
+  })
+
+
+
+    ---timeline use for short the code dealy ko bachta hai ----
+    var tl = gsap.timeline();
+
+  tl.to ("h1" , {
+     x:500,
+     duration: 1
+  })
+
+  tl.to ("h2" , {
+    x:600 ,
+    duration:1
+  })
+tl.to ("h4" , {
+     x:800,
+     duration:1
+})
