@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     
     
 }
 
@@ -31,7 +32,10 @@ html ,body {
 #page2{
     height: 100%;
     width: 100%;
-    background-color: rgb(83, 80, 80);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .nav-part2{
     display: flex;
@@ -51,21 +55,23 @@ html ,body {
 #container{
     height: 80%;
     width: 100%;
-    background-color: red;
+   
     display: flex;
 }
 
 #left{
-    background-color: blue;
+    
     width: 50%;
     height: 100%;
 }
 
 #left h1 {
-    font-size: 70px;
+    font-size: 90px;
     line-height: 100px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: 10px;
+    
 
 }
 #right{
@@ -73,3 +79,37 @@ html ,body {
     width: 50%;
     height: 100%;
 }
+
+#right  img {
+     width: 70%;
+     height: 80%;
+     object-fit: cover;
+     margin-top: 20px;
+    margin-left: 10%;
+     border-radius: 10px;
+    }
+
+
+    .box{
+        height: 300px;
+        width: 400px;
+        border: 2px solid white;
+        border-radius: 15px;
+       text-align: center;
+        padding: 40px;
+
+    }
+
+    .box h1 {
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+
+    #left h1 span img{
+       width: 70px;
+       height: 70px;
+       object-fit: cover;
+       border-radius: 50%;
+       margin : -2px ;
+       
+    }

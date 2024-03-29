@@ -1,21 +1,41 @@
-gsap.registerPlugin(ScrollTrigger);
+var tl = gsap.timeline()
 
-// Define animation for the boxes
-const animateBoxes = (boxId) => {
-  gsap.from(boxId, {
-    opacity: 0,
-    x: -50,
-    duration: 1,
-    scrollTrigger: {
-      trigger: boxId,
-      start: "top 80%", // Trigger animation when 80% of the box is in view
-      end: "bottom 20%", // Stop animation when 20% of the box is out of view
-      scrub: true // Smoothly transitions the animation as the user scrolls
-    }
-  });
-};
+tl.from("#nav h2 , #nav h3 , #nav h4  " , {
+  y:-80,
+  opacity:0,
+  duration:0.8,
+  delay:0.5,
+  stagger:0.3,
 
-// Call the animation function for each box
-animateBoxes("#box1");
-animateBoxes("#box2");
-animateBoxes("#box3");
+} )
+
+tl.from(" #left h1" , {
+   x:-500,
+   duration:0.5,
+   opacity:0,
+   stagger:0.5,
+
+})
+
+tl.from("#right img  ", {
+     scale:0.5,
+     duration:0.3,
+     opacity:0
+});
+
+
+
+
+
+gsap.from("#page2 .box" , {
+   scale:0,
+   opacity:0,
+   duration:1,
+   stagger:0.4,
+   scrollTrigger:{
+      trigger: "#page2 .box",
+      scroller: "body",
+      markers:true,
+      start:"top 50%",
+   }
+})
