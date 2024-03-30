@@ -1,0 +1,41 @@
+@font-face {
+    font-family: head ;
+    src: url(./Heading-Now-Variable.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: head  ;
+    font-weight: 100;
+    font-style: normal;
+   
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    white-space: nowrap;
+    font-stretch: 350%;
+    /* overflow: hidden; */
+}
+
+#page1{
+    font-size: 20vh;
+    color: white;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
